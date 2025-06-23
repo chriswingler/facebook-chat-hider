@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Facebook Chat Hider",
+  "version": "1.0",
+  "description": "Hide unwanted Facebook chat elements with simple X buttons",
+  
+  "permissions": [
+    "storage"
+  ],
+  
+  "content_scripts": [
+    {
+      "matches": ["*://*.facebook.com/*"],
+      "js": ["storage.js", "ui.js", "content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_end"
+    }
+  ]
+}

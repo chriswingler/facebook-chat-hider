@@ -24,6 +24,13 @@ yarn-error.log*
 *.crx
 *.pem
 web-ext-artifacts/
+*.zip
+*.tar.gz
+facebook-chat-hider-package/
+
+# Build/packaging artifacts
+create_zip.py
+package-extension.sh
 
 # Claude Code artifacts
 .claude/
